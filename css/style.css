@@ -191,7 +191,6 @@ body {
 }
 
 .txt {
-  display: inline-block;
   background-color: hsl(213, 12%, 24%);
   font-weight: 700;
   font-size: 16px;
