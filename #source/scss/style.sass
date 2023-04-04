@@ -1,0 +1,116 @@
+// Файл обнуляющих стилей
+@import "_nullstyle"
+// Импорт стилей
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap')
+
+/* ===========Style============== */
+.hide
+    display: none
+
+body 
+    font-family: 'Overpass', sans-serif
+    background-color: hsl(216, 12%, 8%)
+    color: #fff
+
+.container 
+    max-width: 400px
+.wrapper 
+    display: flex
+    min-height: 100%
+    overflow: hidden
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 15px
+
+.content 
+    padding: 25px 
+    background-color: hsl(213, 19%, 18%) 
+    border-radius: 20px 
+
+.iconStar 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 45px
+    height: 45px
+    background-color: hsl(213 12% 24%)
+    border-radius: 50%
+    margin: 0 0 25px 0
+
+.title
+    font-weight: 700
+    font-size: 28px
+    margin: 0 0 15px 0
+
+.text 
+    font-weight: 400
+    font-size: 16px
+    line-height: 1.5
+    margin: 0 0 25px 0
+    color: hsl(217, 12%, 63%)
+
+.row__btns 
+    display: flex
+    justify-content: space-between
+
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 45px
+    height: 45px
+    background-color: hsl(213 12% 24%)
+    border-radius: 50%
+    font-weight: 700
+    font-size: 16px
+    color: hsl(217, 12%, 63%)
+    margin: 0 0 35px 0
+    cursor: pointer
+.checked-btn
+    color: hsl(0, 0%, 100%)
+    background-color: hsl(217, 12%, 63%)
+.btn:active
+    background-color: hsl(25, 97%, 53%)
+    color: hsl(0, 0%, 100%)
+
+.button 
+    width: 100%
+    text-transform: uppercase
+    color: hsl(0, 0%, 100%)
+    font-weight: 700
+    font-size: 16px
+    background-color: hsl(25, 97%, 53%)
+    border-radius: 20px
+    padding: 10px 0
+    letter-spacing: 2px
+    cursor: pointer
+.button:active
+    background-color: hsl(0, 0%, 100%)
+    color: hsl(25, 97%, 53%)
+
+@media screen and ( max-width:375px  )
+    .content 
+        padding: 15px 
+
+.thankYou
+    text-align: center
+    .iconThank
+        margin: 30px 0
+
+.txt
+    display: inline-block
+    background-color: hsl(213 12% 24%)
+    font-weight: 700
+    font-size: 16px
+    color: hsl(25, 97%, 53%)  
+    padding: 8px 15px
+    border-radius: 20px
+    margin: 0 0 35px 0
+/* ===========Footer============== */
+.attribution 
+    font-size: 11px 
+    text-align: center
+    height: 15px
+    margin-top: -15px
+    
