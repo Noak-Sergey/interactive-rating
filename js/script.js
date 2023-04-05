@@ -10,19 +10,18 @@ window.addEventListener("DOMContentLoaded", () => {
         selectSpan = document.querySelector('.select-num');
 
         
-    
-        const selectNumber = (num) => {
+        const selectNumber = (numBtn) => {
 
             if (selectedRating !== "") {
                 //selectedRating.classList.remove('checked-btn');
                 btns.forEach( btn => btn.classList.remove('checked-btn'))
             }
 
-            currentRating = num.textContent;
-            num.classList.add('checked-btn');
-            selectedRating = num;
+            currentRating = numBtn.textContent;
+            numBtn.classList.add('checked-btn');
+            selectedRating = numBtn;
 
-            console.log(num)
+            console.log(numBtn)
         }
         
         const showThanks = () => {
@@ -39,6 +38,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 setTimeout(() => {
                     screenTwo.classList.toggle('hide'); 
                     screenOne.classList.toggle('hide');
+                    currentRating = '' ;
+                    selectedRating.classList.remove('checked-btn');
                 }, 3000);
             } 
             timerId();
